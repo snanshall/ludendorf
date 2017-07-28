@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<data>
+      <!-- main menu -->
+      
+        <menuitem id="menu_lf_inventory_menu" name="Ludendorf Inventory" parent="" sequence="20" />
+        
+            <!--forms menu-->
+            <menuitem id="menu_lf_inventoryforms" name="Inventory Forms" parent="menu_lf_inventory_menu" />
+                <menuitem id="menu_lf_inventory_register" name="Drug Register"  parent="menu_lf_inventoryforms" action="act_open_lf_register" sequence="10"/>
+                <menuitem id="menu_lf_inventory_request" name="Drug Request"  parent="menu_lf_inventoryforms" action="act_open_lf_request" sequence="10"/>
+            <!--setup menu-->
+            <menuitem id="menu_lf_inventory_config" name="Configuration" parent="menu_lf_inventory_menu" sequence="90"/>
+                <!--<menuitem id="menu_rf_liability_type" name="Liability Type" parent="menu_rf_claim_config" sequence="10" action="act_open_rf_liability_type_view"/>
+                <menuitem id="menu_rf_claim_status" name="Claim Status" parent="menu_rf_claim_config" sequence="10" action="act_open_rf_claim_status_view"/>
+                <menuitem id="menu_rf_claim_status" name="Claim Checklist" parent="menu_rf_claim_config" sequence="10" action="act_open_rf_claim_checklist_view"/>-->
+
+
+    </data>
+</odoo>

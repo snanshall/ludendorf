@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+
+
+         <record id="batch_number_format" model="ir.sequence">
+            <field name="name">Batch ID</field>
+            <field name="code">lf.batch.id</field>
+            <field name="prefix">BATCH</field>
+            <field eval="1" name="number_next"/>
+            <field eval="1" name="number_increment"/>
+            <field name="padding">5</field>
+            <field name="company_id" eval="False"/>
+        </record>
+        
+        <record id="request_number_format" model="ir.sequence">
+            <field name="name">Request ID</field>
+            <field name="code">lf.req.id</field>
+            <field name="prefix">REQ</field>
+            <field eval="1" name="number_next"/>
+            <field eval="1" name="number_increment"/>
+            <field name="padding">5</field>
+            <field name="company_id" eval="False"/>
+        </record>
+   
+    </data>
+</odoo>

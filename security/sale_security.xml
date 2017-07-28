@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+
+<data noupdate="1">
+    <!-- Multi - Company Rules -->
+
+    <record model="ir.rule" id="inventory_request_comp_rule">
+        <field name="name">Inventory request multi-company</field>
+        <field name="model_id" ref="lf.request"/>
+        <field name="global" eval="True"/>
+        <field name="domain_force">['|',('company_id','=',False),('company_id','child_of',[user.company_id.id])]</field>
+    </record>
+
+</data>
+</odoo>
